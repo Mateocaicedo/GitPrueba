@@ -10,18 +10,28 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
+
         <script src="nuevo.js"></script>
     </head>
     <body >
         
         <script src="" async defer></script>
 
-        <div>
-            <h3>Escribe tu nota</h3>
-            <input id="nota" type="number">
-            <input type="button" value="Calcular" onclick="Notas()" >
-            <p id="res">Resultado es: </p>
+        <div class="esto">
+            <div class="contend">
+                <h3>Escribe tu nota</h3>
+                <div class="calc">
+                    <input class="campo" id="nota" type="number">
+                    <input class="boton" type="button" value="Calcular" onclick="Notas()" >
+                </div>
+               <div class="resultado">
+                <p id="res">Resultado es: </p>
+                <p id="res2"></p>
+               </div>
+             
+            </div>
+           
         </div>
     </body>
 </html>

@@ -1,12 +1,19 @@
 
 function Notas() {
     var nota = document.getElementById("nota").value;
-
-    if (nota > 3) {
-        document.getElementById("res").innerHTML = "Resultado es: tu pasaste";
+    console.log(nota)
+    if (nota == "") {
+        alert("No has escrito ninguna nota")
+        document.getElementById("res2").innerHTML = "escribe un numero";
+        document.getElementById("res2").style.color = "red";
+    }else if (nota > 3) {
+        document.getElementById("res2").innerHTML = "tu pasaste";
+        document.getElementById("res2").style.color = "rgb(59, 151, 90)";
     } else {
-        document.getElementById("res").innerHTML = "Resultado es: tu no pasaste";
+        document.getElementById("res2").innerHTML = "tu no pasaste";
+        document.getElementById("res2").style.color = "red";
     }
+    
 }
 
 
